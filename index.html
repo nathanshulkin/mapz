@@ -9,18 +9,21 @@ Basic HTML Template Page -->
     <title>Whatever You Want</title>
 
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>     
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+
     <style>
       body { margin: 0; padding: 0; }
       #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     </style>
 
-
   </head>
   <body>
 
-    <div id='map'></div>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    
     <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoibnh0aHhuIiwiYSI6ImNrdHQ0d3RpeDFtMmIyb3AzemhjYjY4b2MifQ._VUSGjsO_fbc6je3-PasDg';
       const map = new mapboxgl.Map({
