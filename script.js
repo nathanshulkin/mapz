@@ -165,13 +165,13 @@ about.appendChild(aboutTxt);
 
 
 // create drop down
-const ddown = document.createElement('div');
-ddown.setAttribute('class', 'dropbtn');
-ddown.addEventListener("click", dropdownClick);
-ddown.textContent="Ride or Die";
+//const ddown = document.createElement('div');
+//ddown.setAttribute('class', 'dropbtn');
+//ddown.addEventListener("click", dropdownClick);
+//ddown.textContent="Ride or Die";
 
 // put menu in dropdown
-ddown.appendChild(menuDDown);
+//ddown.appendChild(menuDDown);
 
 
 const mainStuff = document.createElement('div');
