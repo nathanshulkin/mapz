@@ -7,7 +7,7 @@ const mainCont = document.createElement('div');
 mainCont.setAttribute('class', 'container');
 
 const mainText = document.createElement('h1');
-mainText.textContent="hello there";
+mainText.textContent="hello there woo";
 
 mainCont.appendChild(mainText);
 
