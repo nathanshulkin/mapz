@@ -3,9 +3,17 @@
 
 const app = document.getElementById('root');
 
+const mainCont = document.createElement('div');
+mainCont.setAttribute('class', 'container');
+
+app.appendChild(mainCont);
+
+
 // drop down button click
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+/*
 function dropdownClick() {
   document.getElementById("myDropdown").classList.toggle("show");
   var animate = createKeyframeAnimation();
@@ -189,3 +197,4 @@ mainContainer.appendChild(mainStuff);
 //app.appendChild(ddown);
 app.appendChild(mainContainer);
 
+*/
