@@ -1,9 +1,7 @@
 // Nathan Shulkin
 // Basic Template script
 
-
 const app = document.getElementById('root');
-
 
 // drop down button click
 /* When the user clicks on the button,
@@ -19,7 +17,6 @@ function dropdownClick() {
                                                   margin: '-=20px',
                                                 });
 }
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -33,7 +30,6 @@ window.onclick = function(event) {
     }
   }
 }
-
 
 function calculateCollapsedScale () {
   // The menu title can act as the marker for the collapsed state.
@@ -178,17 +174,18 @@ ddown.textContent="Ride or Die";
 ddown.appendChild(menuDDown);
 
 
-//const mainStuff = document.createElement('div');
-//mainStuff.setAttribute('class', 'container');
+const mainStuff = document.createElement('div');
+mainStuff.setAttribute('class', 'h1');
+mainStuff.textContent="Hello There";
 
 //const mainTxt = document.createElement('p');
 //mainTxt.textContent="Welcome to Map stuff";
 
 //mainStuff.appendChild(mainTxt);
-//mainContainer.appendChild(mainStuff);
+mainContainer.appendChild(mainStuff);
 
 
 // add elements to page
-app.appendChild(ddown);
+//app.appendChild(ddown);
 app.appendChild(mainContainer);
 
