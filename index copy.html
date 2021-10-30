@@ -1,0 +1,38 @@
+<!-- Nathan Shulkin
+Basic HTML Template Page -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Whatever You Want</title>
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>     
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+
+  </head>
+  <body>
+
+    <div id='map' style='width: 1000px; height: 1000px;'></div>
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoibnh0aHhuIiwiYSI6ImNrdmU1OGV1ajNqYmIyb3A2cjU2cXJnaHMifQ.hcOs-cah6HiL8PA1gLgdhA';
+      const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [38, -104],
+      zoom: 5
+      });
+    </script>
+
+  </body>
+</html>
