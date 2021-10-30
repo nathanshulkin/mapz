@@ -26,17 +26,19 @@ Basic HTML Template Page -->
   </head>
   <body>
 
-    <div id='map'></div>
-
     <div id="root" style="cursor: pointer;"></div>
 
     <script src="script.js" charset="utf-8"></script>
 
+    <div id='map'></div>
     <script>
-      L.mapbox.accessToken = 'pk.eyJ1Ijoibnh0aHhuIiwiYSI6ImNrdHQ0d3RpeDFtMmIyb3AzemhjYjY4b2MifQ._VUSGjsO_fbc6je3-PasDg';
-      var map = L.mapbox.map('map')
-          .setView([38, -104], 5)
-          .addLayer(L.mapbox.styleLayer('mapbox://styles/nxthxn/ckvd4icy8088y14m4wi9jjttt'));
+      mapboxgl.accessToken = 'pk.eyJ1Ijoibnh0aHhuIiwiYSI6ImNrdHQ0d3RpeDFtMmIyb3AzemhjYjY4b2MifQ._VUSGjsO_fbc6je3-PasDg';
+      const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/nxthxn/ckvd4icy8088y14m4wi9jjttt',
+      center: [38, -104],
+      zoom: 5
+      });
     </script>
 
   </body>
