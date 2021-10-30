@@ -178,6 +178,16 @@ ddown.textContent="Ride or Die";
 ddown.appendChild(menuDDown);
 
 
+const mainStuff = document.createElement('div');
+mainStuff.setAttribute('class', 'container');
+
+const mainTxt = document.createElement('p');
+mainTxt.textContent="Welcome to Map stuff";
+
+mainStuff.appendChild(mainTxt);
+mainContainer.appendChild(mainStuff);
+
+
 // add elements to page
 app.appendChild(ddown);
 app.appendChild(mainContainer);
