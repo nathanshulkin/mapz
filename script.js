@@ -6,6 +6,11 @@ const app = document.getElementById('root');
 const mainCont = document.createElement('div');
 mainCont.setAttribute('class', 'container');
 
+const mainText = document.createElement('h1');
+mainText.textContent="hello there";
+
+mainCont.appendChild(mainText);
+
 app.appendChild(mainCont);
 
 
