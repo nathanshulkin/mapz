@@ -140,53 +140,30 @@ menuDDown.setAttribute('class', 'dropdown-content');
 
 const custom = document.createElement('div');
 custom.setAttribute('class', 'menuCard');
-
-custom.addEventListener("click", joinClick);
-
-const customTxt = document.createElement('p');
-customTxt.textContent="Join Us";
-
-const cater = document.createElement('div');
-cater.setAttribute('class', 'menuCard');
-const caterTxt = document.createElement('p');
-caterTxt.textContent="Learn More";
-
-cater.addEventListener("click", learnClick);
-
+const usTxt = document.createElement('p');
+customTxt.textContent="custom";
 
 const about = document.createElement('div');
 about.setAttribute('class', 'menuCard');
 const aboutTxt = document.createElement('p');
-aboutTxt.textContent="About Us";
+aboutTxt.textContent="aboutMap";
 
 about.addEventListener("click", aboutClick);
-
-
-const favorites = document.createElement('div');
-favorites.setAttribute('class', 'menuCard');
-const favTxt = document.createElement('p');
-favTxt.textContent="Our Favorites";
-
-favorites.addEventListener("click", favClick);
 
 
 const us = document.createElement('div');
 us.setAttribute('class', 'menuCard');
 const usTxt = document.createElement('p');
-usTxt.textContent="Find Us Online";
+usTxt.textContent="Find Me Online";
 
 us.addEventListener("click", usClick);
 
 
 //add menu
 menuDDown.appendChild(custom);
-menuDDown.appendChild(cater);
 menuDDown.appendChild(about);
-menuDDown.appendChild(favorites);
 menuDDown.appendChild(us);
 custom.appendChild(customTxt);
-cater.appendChild(caterTxt);
-favorites.appendChild(favTxt);
 us.appendChild(usTxt);
 about.appendChild(aboutTxt);
 
