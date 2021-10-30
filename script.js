@@ -138,10 +138,10 @@ const menuDDown = document.createElement('div');
 menuDDown.setAttribute('id', 'myDropdown');
 menuDDown.setAttribute('class', 'dropdown-content');
 
-const custom = document.createElement('div');
-custom.setAttribute('class', 'menuCard');
-const usTxt = document.createElement('p');
-customTxt.textContent="custom";
+//const custom = document.createElement('div');
+//custom.setAttribute('class', 'menuCard');
+//const usTxt = document.createElement('p');
+//customTxt.textContent="custom";
 
 const about = document.createElement('div');
 about.setAttribute('class', 'menuCard');
@@ -160,10 +160,10 @@ us.addEventListener("click", usClick);
 
 
 //add menu
-menuDDown.appendChild(custom);
+//menuDDown.appendChild(custom);
 menuDDown.appendChild(about);
 menuDDown.appendChild(us);
-custom.appendChild(customTxt);
+//custom.appendChild(customTxt);
 us.appendChild(usTxt);
 about.appendChild(aboutTxt);
 
