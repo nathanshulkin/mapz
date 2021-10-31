@@ -53,7 +53,7 @@ body { margin: 0; padding: 0; }
 
 
         map.on('click', 'avg20162020-98wt9e', (e) => {
-            //alert(e.features[0].properties);
+            alert(e.features[0].properties);
             // Copy coordinates array.
             const coordinates = e.features[0].geometry.coordinates.slice();
             const description = e.features[0].properties.description;
