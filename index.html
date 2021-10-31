@@ -52,12 +52,12 @@ body { margin: 0; padding: 0; }
         });
 
         // Change the cursor to a pointer when the mouse is over the places layer.
-        map.on('mouseenter', 'choropleth', () => {
+        map.on('mouseenter', 'county-polygon-d11tw0', () => {
             map.getCanvas().style.cursor = 'pointer';
         });
 
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'choropleth', () => {
+        map.on('mouseleave', 'county-polygon-d11tw0', () => {
             map.getCanvas().style.cursor = '';
         });
     });
