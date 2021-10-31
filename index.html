@@ -76,7 +76,7 @@ body { margin: 0; padding: 0; }
 
             new mapboxgl.Popup()
                 .setLngLat(coordinates)
-                .setHTML(e)
+                .setHTML(e.features[0])
                 .addTo(map);
             });
 
