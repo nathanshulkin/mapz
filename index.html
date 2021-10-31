@@ -62,7 +62,7 @@ body { margin: 0; padding: 0; }
         });
 
         map.on('click', 'avg20162020-98wt9e', (e) => {
-            alert("you clicked");
+            alert(e.features[0]);
             // Copy coordinates array.
             const coordinates = e.features[0].geometry.coordinates.slice();
             const description = e.features[0].properties.description;
@@ -76,7 +76,7 @@ body { margin: 0; padding: 0; }
 
             new mapboxgl.Popup()
                 .setLngLat(coordinates)
-                .setHTML(e.features[0])
+                .setHTML(e)
                 .addTo(map);
             });
 
