@@ -33,7 +33,36 @@ body { margin: 0; padding: 0; }
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.
         map.on('click', 'county-polygon-d11tw0', (e) => {
+            
+            // Limit the number of properties we're displaying for
+            // legibility and performance
+            const displayProperties = [
+            {'id':'name', 'tag' : 'County: '},
+            {'id':'change', 'tag' :'Winning party swing: '},
+            {'id':'party', 'tag' :'Winning party: '},
+            {'id':'2016dvotes', 'tag' :'2016 Democrat votes: '},
+            {'id':'2016rvotes', 'tag' :'2016 Republican votes: '},
+            {'id':'2016ovotes', 'tag' :'2016 Third Party votes: '},
+            {'id':'2020dvotes', 'tag' :'2020 Democrat votes: '},
+            {'id':'2020rvotes', 'tag' :'2020 Republican votes: '},
+            {'id':'2020ovotes', 'tag' :'2020 Third Party votes: '}
+            ];
+            
+            const displayFeatures = features.map((feat) => {
+            const displayFeat = {}
+            var i = 0;
+            displayProperties.forEach((prop) => {
+            displayFeat[i] = String(prop['tag'])+String(feat['properties'][prop['id']]);
+            i += 1;
+            });
+            return displayFeat;
+            });
 
+            var res = Object.values(displayFeatures[displayFeatures.length -1]).join('<br>');
+            
+            document.getElementById(target).innerHTML = res;
+
+            
             // Copy coordinates array.
             const coordinates = e.features[0].geometry.coordinates.slice();
             const description = e.features[0].properties.description;
