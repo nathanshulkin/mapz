@@ -7,7 +7,7 @@ and the map should load and display.
 The color on the map represents the % swing for that county, not necessarily the winning party. So, if Red won in a county by 10% in 2016, and then won again in that county in 2020 but by only 5%, then that county would display as Blue because the county swung towards Blue; even though Red was the winning party both times. This is because this map focuses on changes in voting for a county as opposed to just displaying standard election results for a county.
 
 
-You can then use the mouse to click on or hover over any county in the continental United States and see the data for that county. This was done so that you could click on a county and then hover over another county in order to compare two different counties.
+You can use the mouse to click on or hover over any county in the continental United States and see the data for that county. This was done so that you could click on a county and then hover over another county in order to compare two different counties.
 
 
 The data displayed on click/hover is:
